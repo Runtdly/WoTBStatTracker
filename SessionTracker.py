@@ -13,7 +13,7 @@ from PySide6.QtGui import QScreen
 
 APP_ID = "fab97ea7728dfb15463f1af276cef479"
 API = "https://api.wotblitz.eu/wotb/account/"
-player = "BABAJAGHJAAA"
+player = "BlitzBrah"
 
 def get_player_id() -> str:
 	data = requests.get(f"{API}/list/?application_id={APP_ID}&search={player}")
