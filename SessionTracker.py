@@ -228,9 +228,13 @@ class MainWindow(QMainWindow):
 			kills_per_battle = f"{kills / battles:.2f}"
 
 			spots_per_battle = f"{spots / battles:.2f}"
-
-			dmg_ratio = f"{dmg_dealt / dmg_received:.2f}"
-
+			
+			if dmg_received:
+				dmg_ratio = f"{dmg_dealt / dmg_received:.2f}"
+			else:
+				dmg_ratio = "∞"
+			
+			
 
 			if deaths:
 				kd_ratio = f"{kills / deaths:.2f}"
